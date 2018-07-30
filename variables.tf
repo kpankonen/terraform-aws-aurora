@@ -217,3 +217,9 @@ variable "replica_scale_out_cooldown" {
   default     = "300"
   description = "Cooldown in seconds before allowing further scaling operations after a scale out"
 }
+
+variable "tags" {
+  type        = "map"
+  default     = {}
+  description = "Map of tags to add to all resources"
+}
